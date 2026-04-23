@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silent Sangkett</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="NOIR home">Neak Sangkett</a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="#hero">Movies</a>
+        <a href="#top-rated">Celebs</a>
+        <a href="#news">News</a>
+        <a href="#archive">Lists</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <label class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="siteSearch" placeholder="Search archive..." />
+        </label>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy">
+          <div class="eyebrow-row">
+            <span class="pill pill-yellow">Featured</span>
+           
+          </div>
+          <h1>NEAK<br />SANGKETT</h1>
+          <p>
+            website where users can explore movies, TV shows, ratings, reviews, and the latest entertainment updates.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="top-rated">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Cinephile Choice</span>
+            <h2>Top Rated Today</h2>
+          </div>
+          <a href="#archive" class="section-link">View All Rankings</a>
+        </div>
+
+        <div class="top-grid">
+          <article class="feature-card">
+            <div>
+              <img src="assets/Gemini_Generated_Image_aq8ombaq8ombaq8o.png" alt="Poster for Neural Ghost" />
+            </div>
+            <div class="feature-meta">
+              <div class="rating-line">★ 9.8 <span>2026 • Sci-Fi</span></div>
+              <h3>Neural Ghost</h3>
+              <div class="card-actions">
+                <a class="tiny-btn" href="movie-detail.html?movie=neural-ghost">Details</a>
+                <button class="tiny-btn tiny-btn-accent" type="button">Add to List</button>
+              </div>
+            </div>
+          </article>
+
+          <div class="rank-stack">
+            <article class="rank-card">
+              <div class="rank-num">#2</div>
+              <div class="rank-rating">★ 9.4</div>
+              <h4>Midnight Pulse</h4>
+              <p>Thriller • 2h 15m</p>
+              <a class="text-btn" href="movie-detail.html?movie=midnight-pulse">View Details</a>
+            </article>
+
+            <article class="rank-card">
+              <div class="rank-num">#3</div>
+              <div class="rank-rating">★ 9.2</div>
+              <h4>Cold Harbor</h4>
+              <p>Drama • 1h 50m</p>
+              <a class="text-btn" href="movie-detail.html?movie=cold-harbor">View Details</a>
+            </article>
+
+            <article class="wide-card">
+              <div class="album-art"></div>
+              <div>
+                <div class="mini-rating">★ 4.3 | 3 ratings</div>
+                <h4>Fractured Sky</h4>
+                <p>Animation • 2024</p>
+                <a class="text-btn wide-detail-link" href="movie-detail.html?movie=fractured-sky">View Details</a>
+              </div>
+              <button class="circle-btn" type="button" aria-label="Add Fractured Sky">+</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="releases">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Coming Soon</span>
+            <h2>Upcoming Releases</h2>
+          </div>
+          <div class="carousel-controls">
+            <button class="circle-btn" id="scrollLeft" aria-label="Scroll left" type="button">‹</button>
+            <button class="circle-btn" id="scrollRight" aria-label="Scroll right" type="button">›</button>
+          </div>
+        </div>
+
+        <div class="release-row" id="releaseRow">
+          <article class="release-card">
+            <div class="release-poster release-lens">
+              <img src="assets/ChatGPT Image Apr 21, 2026, 06_14_37 PM.png" alt="Poster for The Last Frame" />
+            </div>
+            <span class="date-pill">Oct 14</span>
+            <h4>Phlov Mek (Sky Road)</h4>
+            <p>Romance • 110 min</p>
+            <a class="text-btn release-link" href="movie-detail.html?movie=phlov-mek-sky-road">Open Details</a>
+          </article>
+
+          <article class="release-card">
+            <div class="release-poster release-void">
+              <img src="assets/ChatGPT Image Apr 21, 2026, 06_14_04 PM.png" alt="Poster for Void Echoes" />
+            </div>
+            <span class="date-pill">Nov 23</span>
+            <h4>Void Echoes</h4>
+            <p>Horror • Dolls Atomos</p>
+            <a class="text-btn release-link" href="movie-detail.html?movie=void-echoes">Open Details</a>
+          </article>
+
+          <article class="release-card">
+            <div class="release-poster release-forest">
+              <img src="assets/ChatGPT Image Apr 21, 2026, 06_14_20 PM.png" alt="Poster for Silent Grove" />
+            </div>
+            <span class="date-pill">Nov 19</span>
+            <h4>Silent Grove</h4>
+            <p>Mystery • Director's Cut</p>
+            <a class="text-btn release-link" href="movie-detail.html?movie=silent-grove">Open Details</a>
+          </article>
+
+          <article class="release-card">
+            <div class="release-poster release-neon">
+              <img src="assets/ChatGPT Image Apr 21, 2026, 06_14_26 PM.png" alt="Poster for Neon Dreams" />
+            </div>
+            <span class="date-pill">Dec 05</span>
+            <h4>Neon Dreams</h4>
+            <p>Action • IMAX</p>
+            <a class="text-btn release-link" href="movie-detail.html?movie=neon-dreams">Open Details</a>
+          </article>
+
+          <article class="release-card">
+            <div class="release-poster release-city">
+              <img src="assets/ChatGPT Image Apr 21, 2026, 06_14_31 PM.png" alt="Poster for Afterimage Zero" />
+            </div>
+            <span class="date-pill">Dec 12</span>
+            <h4>Afterimage Zero</h4>
+            <p>Sci-Fi • 118 min</p>
+            <a class="text-btn release-link" href="movie-detail.html?movie=afterimage-zero">Open Details</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section news-section" id="news">
+        <div class="news-sidebar">
+          <span class="section-tag">Industry Intel</span>
+          <h2>Movie News</h2>
+          <p>
+            Stay ahead of the curve with curated editorial on casting, production insights,
+            and festival coverage from across the globe.
+          </p>
+          <a href="#archive" class="explore-link">Explore all news →</a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-thumb ">
+              <img src="assets/1476961_pillionwasteman_362571.jpg" alt="News thumbnail for Cannes 2024 article" />
+            </div>
+            <div class="news-content">
+              <span class="label label-yellow">Feature</span>
+              <span class="label">Cannes 2024</span>
+              <h3>The Resurgence of 70mm: Why Modern Directors are Ditching Digital</h3>
+              <p>
+                Exploring the technical and emotional reasons behind the industry's shift back
+                to large-format film photography.
+              </p>
+              <div class="news-meta">By Marcus Thorne <span>• 4 min read</span></div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-thumb ">
+              <img src="assets/Apple_TV_Outcome_key_art_graphic_header_16_9_show_home.jpg.large_2x.jpg" alt="News thumbnail for Elena Vance casting article" />
+            </div>
+            <div class="news-content">
+              <span class="label label-purple">Breaking</span>
+              <span class="label">Casting Call</span>
+              <h3>Elena Vance to Lead Upcoming Noir Thriller 'Echo in the Hall'</h3>
+              <p>
+                The breakout role from last summer's indie hit signs on for a mysterious project
+                directed by visionary auteur Julia Ross.
+              </p>
+              <div class="news-meta">By Sarah Chen <span>• 1 hour ago</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section archive-section hidden" id="archive">
+        <div class="section-head archive-head">
+          <div>
+            <span class="section-tag">Search Results</span>
+            <h2>"Cerebral Noir"</h2>
+          </div>
+          <div class="archive-head-actions">
+            <p class="results-count"><span id="resultCount">3</span> entries found</p>
+            <button class="mobile-filter-toggle" id="mobileFilterToggle" type="button" aria-expanded="false" aria-controls="filtersPanel">Filters</button>
+          </div>
+        </div>
+
+        <div class="filters-backdrop" id="filtersBackdrop"></div>
+
+        <div class="archive-layout">
+          <aside class="filters-panel" id="filtersPanel">
+            <div class="filters-topbar">
+              <h3>Filters</h3>
+              <button class="filter-close" id="filterClose" aria-label="Close filters" type="button">×</button>
+            </div>
+
+            <div class="filter-block">
+              <label for="yearMin">Release year</label>
+              <div class="year-inputs">
+                <input type="number" id="yearMin" value="2020" />
+                <input type="number" id="yearMax" value="2024" />
+              </div>
+            </div>
+
+            <div class="filter-block">
+              <label for="ratingRange">Minimum rating <span id="ratingValue">8.0</span></label>
+              <input type="range" id="ratingRange" min="6" max="10" step="0.1" value="8.0" />
+            </div>
+
+            <div class="filter-block">
+              <label>Studio</label>
+              <div class="check-list">
+                <label><input type="checkbox" value="A24" /> A24</label>
+                <label><input type="checkbox" value="Neon" checked /> Neon</label>
+                <label><input type="checkbox" value="Warner Bros." /> Warner Bros.</label>
+                <label><input type="checkbox" value="Universal" /> Universal</label>
+              </div>
+            </div>
+
+            <div class="filter-block">
+              <label>Popular genres</label>
+              <div class="genre-chips">
+                <button class="chip" data-genre="Noir" type="button">Noir</button>
+                <button class="chip active" data-genre="Thriller" type="button">Thriller</button>
+                <button class="chip" data-genre="Sci-Fi" type="button">Sci-Fi</button>
+                <button class="chip" data-genre="Mystery" type="button">Mystery</button>
+              </div>
+            </div>
+
+            <button class="apply-btn" id="applyFilters" type="button">Apply Filters</button>
+          </aside>
+
+          <div class="results-list" id="resultsList">
+            <article class="result-card" data-year="2024" data-rating="8.4" data-studio="Neon" data-genres="Thriller,Noir">
+              <div class="result-poster result-observer"></div>
+              <div class="result-copy">
+                <h3>The Obsidian Echo</h3>
+                <div class="result-meta">2024 &nbsp; Directed by Elias Thorne &nbsp; 148 min</div>
+                <p>
+                  In a sprawling megacity where memories are traded like currency, a disgraced detective
+                  uncovers a conspiracy buried within the synthetic layers of the upper-tier elite.
+                </p>
+                <div class="detail-grid">
+                  <div><span>Lead Cast</span>Julianne Moore, Cillian Murphy, Florence Pugh</div>
+                  <div><span>Studio</span>Neon Films</div>
+                </div>
+                <div class="result-actions">
+                  <button class="primary-btn small" type="button">Watch Trailer</button>
+                  <a class="ghost-btn small" href="movie-detail.html?movie=the-obsidian-echo">Full Archive Record</a>
+                </div>
+              </div>
+              <div class="score-stack">
+                <div class="score-box"><span>IMDb</span><strong>8.4</strong></div>
+                <div class="score-box"><span>Meta</span><strong>79</strong></div>
+              </div>
+            </article>
+
+            <article class="result-card" data-year="2023" data-rating="9.1" data-studio="A24" data-genres="Thriller,Mystery">
+              <div class="result-poster result-paper"></div>
+              <div class="result-copy">
+                <h3>Void Archive</h3>
+                <div class="result-meta">2023 &nbsp; Directed by Ava Duvernay &nbsp; 112 min</div>
+                <p>
+                  An experimental journey through a digitised afterlife. Void Archive pushes the boundaries
+                  of cinematic storytelling through a non-linear exploration of lost data and emotional resonance.
+                </p>
+                <div class="detail-grid">
+                  <div><span>Lead Cast</span>Tilda Swinton, Oscar Isaac, Steven Yeun</div>
+                  <div><span>Studio</span>A24 Studios</div>
+                </div>
+                <div class="result-actions">
+                  <button class="primary-btn small" type="button">Watch Trailer</button>
+                  <a class="ghost-btn small" href="movie-detail.html?movie=void-archive">Full Archive Record</a>
+                </div>
+              </div>
+              <div class="score-stack">
+                <div class="score-box"><span>IMDb</span><strong>9.1</strong></div>
+                <div class="score-box"><span>Meta</span><strong>92</strong></div>
+              </div>
+            </article>
+
+            <article class="result-card" data-year="2022" data-rating="7.8" data-studio="Warner Bros." data-genres="Sci-Fi,Thriller">
+              <div class="result-poster result-drive"></div>
+              <div class="result-copy">
+                <h3>The Long Drive Home</h3>
+                <div class="result-meta">2022 &nbsp; Directed by Denis Villeneuve &nbsp; 134 min</div>
+                <p>
+                  A slow-burn character study disguised as a crime thriller. When a getaway driver finds himself
+                  in possession of a prototype AI module, he must navigate a landscape of betrayal and techno-noir paranoia.
+                </p>
+                <div class="detail-grid">
+                  <div><span>Lead Cast</span>Ryan Gosling, Lakeith Stanfield, Anya Taylor-Joy</div>
+                  <div><span>Studio</span>Warner Bros.</div>
+                </div>
+                <div class="result-actions">
+                  <button class="primary-btn small" type="button">Watch Trailer</button>
+                  <a class="ghost-btn small" href="movie-detail.html?movie=the-long-drive-home">Full Archive Record</a>
+                </div>
+              </div>
+              <div class="score-stack">
+                <div class="score-box"><span>IMDb</span><strong>7.8</strong></div>
+                <div class="score-box"><span>Meta</span><strong>81</strong></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="footer">
+      <div class="brand muted">Neak Sangkett</div>
+      <div class="footer-links">
+        <a href="#">About Neak Sangkett</a>
+        <a href="#">Database API</a>
+        <a href="#">Editorial Guidelines</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="copyright">© 2024 Neak Sangkett Cinematic Archive. Data curated for the cinephile.</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

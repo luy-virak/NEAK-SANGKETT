@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Detail | Neak Sangkett</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="detail-page">
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html#hero" aria-label="Neak Sangkett home">Neak Sangkett</a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="index.html#hero">Movies</a>
+        <a href="index.html#top-rated">Celebs</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#archive">Lists</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <label class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search database..." aria-label="Search database" />
+        </label>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero section">
+        <div class="detail-backdrop" id="detailBackdrop"></div>
+
+        <div class="detail-hero-inner">
+          <div class="detail-poster-shell">
+            <div class="detail-poster-art" id="detailPoster">
+              <div class="detail-poster-fallback" id="detailPosterFallback"><span>Loading</span></div>
+            </div>
+          </div>
+
+          <div class="detail-main-copy">
+            <div class="detail-genre-row" id="detailGenres"></div>
+            <h1 class="detail-title" id="detailTitle">Loading</h1>
+            <div class="detail-meta-row" id="detailMeta"></div>
+            <p class="detail-synopsis" id="detailSynopsis"></p>
+            <div class="detail-cta-row">
+              <a class="detail-watch-btn" href="index.html#archive"><span class="detail-icon-dot">＋</span> Add to Watchlist</a>
+              <a class="detail-rate-btn" href="index.html#archive"><span class="detail-icon-dot">★</span> Rate This Movie</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section detail-info-grid">
+        <div class="detail-panel">
+          <div class="detail-panel-head">
+            <div>
+              <span class="detail-kicker">Archive breakdown</span>
+              <h2>Technical Specifications</h2>
+            </div>
+          </div>
+          <div class="detail-spec-grid" id="detailSpecs"></div>
+        </div>
+
+        <aside class="detail-sidebar-card">
+          <span class="detail-kicker">Context notes</span>
+          <h3>Did You Know?</h3>
+          <div class="detail-trivia-list" id="detailTrivia"></div>
+          <a class="detail-sidebar-link" href="index.html#archive">Back to archive →</a>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="detail-cast-heading">
+          <div>
+            <span class="detail-kicker">Ensemble performance</span>
+            <h2>Full Cast</h2>
+          </div>
+        </div>
+        <div class="detail-cast-row" id="detailCast"></div>
+      </section>
+
+      <section class="section">
+        <div class="detail-review-heading">
+          <div>
+            <h2>Editorial Perspectives</h2>
+          </div>
+        </div>
+        <div class="detail-review-wrap" id="detailReviews"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand muted">Neak Sangkett</div>
+      <div class="footer-links">
+        <a href="#">About Neak Sangkett</a>
+        <a href="#">Database API</a>
+        <a href="#">Editorial Guidelines</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="copyright">© 2024 Neak Sangkett Cinematic Archive. Data curated for the cinephile.</div>
+    </footer>
+  </div>
+
+  <script src="movie-detail.js"></script>
+</body>
+</html>
